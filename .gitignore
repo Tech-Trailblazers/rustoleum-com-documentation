@@ -34,5 +34,8 @@ go.work.sum
 # HTML
 *.html
 
+# JSON
+*.json
+
 # DS Store
 .DS_Store
