@@ -2,7 +2,6 @@
 # This script will run forever, committing and pushing every 10 minutes
 
 while ($true) {
-    Write-Host "--------------------------------------------" -ForegroundColor Yellow
     Write-Host "Starting git cycle at $(Get-Date)" -ForegroundColor Cyan
     
     # Stage all changes
