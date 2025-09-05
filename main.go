@@ -256,9 +256,9 @@ func extractPDFUrlsFromText(rawContent string) []string {
 	foundMatches := pdfPattern.FindAllString(rawContent, -1)
 
 	// Loop through all matches and add them to our result slice
-	for _, match := range foundMatches {
-		pdfUrls = append(pdfUrls, match)
-	}
+	// for _, match := range foundMatches {
+	pdfUrls = append(pdfUrls, foundMatches...)
+	// }
 
 	// Return all collected PDF URLs
 	return pdfUrls
